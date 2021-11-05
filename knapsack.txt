@@ -1,0 +1,35 @@
+Aage is een dief. Na maanden voorbereiding is het hem gelukt om het beveiligingssysteem van een luxe appartement te kraken.
+
+Als hij binnenkomt ziet hij veel items. Elk item heeft een waarde (v) en een gewicht (w).
+Age wil natuurlijk zoveel mogelijk waarde meenemen, maar de rugzak die hij heeft kan maar een maximum gewicht (W) aan.
+
+Gegeven een rugzak met capaciteit (W), bepaal de maximum waarde die Aage kan meenemen. Hij mag van elk item er maar één meenemen.
+
+Items zitten in twee lijsten: een lijst met gewichten met lengte n en een lijst met waarden eveneens met lengte n.
+
+Voorbeeld:
+
+Items:
+gewichten = [5,4,6,4]
+waarden = [10,40,30,50]
+Rugzak gewicht = 10
+n = 4
+
+In het voorbeeld heeft het eerste item een gewicht van 5 en een waarde van 10.
+
+De maximale waarde die Aage kan meenemen is 90, hij neemt dan item 2 (index 1) en item 4 (index 3) mee.
+-----------------------------
+value = [60,100,120]
+weight = [10,20,30]
+W = 50
+
+solution = 220
+
+weight = 10 value = 60
+weight = 20 value = 100
+weight = 30 value = 120
+
+weight = 20+10 value = 100+60
+weight = 30+10 value = 120+60
+weight = 30+20 value = 120+100
+weight = (30+20+10) > 50
